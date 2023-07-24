@@ -16,9 +16,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
-        
-      - name: Build ${{ env.ART_NAME }} for ubuntu-latest
-        run: go build ${{ env.ART_NAME }}.go 
+       
         
       - name: upload art for linux
         uses: actions/upload-artifact@v1
